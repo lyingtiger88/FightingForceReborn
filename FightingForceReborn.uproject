@@ -1,0 +1,8 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Games",
+  "Description": "Two-player cooperative 3D beat 'em up prototype.",
+  "Modules": [{"Name":"FightingForceReborn","Type":"Runtime","LoadingPhase":"Default"}],
+  "Plugins": [{"Name":"EnhancedInput","Enabled":true}]
+}
