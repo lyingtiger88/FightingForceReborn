@@ -2,19 +2,27 @@
 
 A cooperative 3D beat 'em up prototype inspired by classic arcade brawlers, built with Unreal Engine 5.8.
 
-## Current milestone
+## Current playable foundation
 
-Establish the project foundation for two-player local co-op:
-
-- First-playthrough camera: third-person split screen.
-- Separate local player controllers and input contexts.
-- Classic fixed-angle camera mode unlockable after campaign completion.
-- Persistent progression and camera preference.
+- Third-person player pawn with an independent spring-arm camera.
+- Horizontal two-player split-screen project configuration.
+- Local-player creation API with a two-player cap and controller-ID validation.
+- Starter keyboard/mouse and gamepad movement, camera, light/heavy attack, and dodge bindings.
+- Team-aware character health and melee damage.
+- Basic enemy AI that selects the nearest living local player, navigates toward them, and attacks at close range.
+- Persistent campaign completion and unlockable Classic Fixed Camera preference.
 
 ## Engine
 
 Unreal Engine 5.8 (C++ with Blueprint extension points).
 
-## Status
+## Current limitations
 
-Foundation scaffold in progress. This repository currently contains architecture and starter gameplay systems, not a playable content-complete game. See `docs/ROADMAP.md` for milestones.
+This is a code foundation, not yet a packaged or editor-verified playable build. Character meshes, animation assets, UI, device enumeration/assignment screens, animation-driven hit windows, and the authored classic camera system are not included yet. Enemy navigation requires a NavMesh in the test level.
+
+See:
+- [Game design](docs/GAME_DESIGN.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Input and first test level](docs/INPUT_AND_FIRST_LEVEL.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Changelog](CHANGELOG.md)

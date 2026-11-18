@@ -1,3 +1,9 @@
 #include "FFRGameMode.h"
 #include "FFRPlayerController.h"
-AFFRGameMode::AFFRGameMode(){ PlayerControllerClass=AFFRPlayerController::StaticClass(); }
+#include "FFRPlayerCharacter.h"
+
+AFFRGameMode::AFFRGameMode()
+{
+    PlayerControllerClass = AFFRPlayerController::StaticClass();
+    DefaultPawnClass = AFFRPlayerCharacter::StaticClass();
+}

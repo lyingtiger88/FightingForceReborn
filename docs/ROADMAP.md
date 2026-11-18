@@ -10,17 +10,23 @@
 - [ ] Generate project files and compile in Unreal Engine 5.8
 
 ## M1 - Two-player local co-op
-- [ ] Device assignment screen and connected-device enumeration
-- [ ] Reserve keyboard/mouse or gamepad per player
-- [ ] Spawn Player 2 only after explicit assignment
-- [ ] Third-person split-screen camera and independent camera controls
+- [x] C++ API to create a second local player with a selected controller ID
+- [x] Two-player horizontal split-screen project setting
+- [x] Third-person player pawn with an independent spring-arm camera per local player
+- [x] Keyboard/gamepad starter movement and combat bindings
+- [ ] Front-end device assignment screen and connected-device enumeration
+- [ ] Physical device reservation UI and reassignment handling
 - [ ] Per-player HUD, pause, and disconnect handling
+- [ ] Verify simultaneous keyboard + two-gamepad routing on target hardware
 
 ## M2 - Combat prototype
-- [ ] Movement, light/heavy attacks, dodge, and block
-- [ ] Hit detection, hit reactions, knockdown, and recovery
-- [ ] Enemy AI target selection across both players
+- [x] Player movement, light/heavy attacks, and dodge
+- [x] Team-aware health and damage handling
+- [x] Basic enemy AI selects the nearest living local player
+- [x] Enemy pursues target and attacks at close range
+- [ ] Attack animation windows, hitboxes, hit reactions, knockdown, and recovery
 - [ ] Grunt, Heavy, and Agile enemy archetypes
+- [ ] Encounter director and coordinated enemy pressure
 
 ## M3 - Campaign vertical slice
 - [ ] One complete stage and encounter flow
